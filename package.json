@@ -1,0 +1,24 @@
+{
+  "name": "holiday-cli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LydiaHaway/Holiday-CLI.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LydiaHaway/Holiday-CLI/issues"
+  },
+  "homepage": "https://github.com/LydiaHaway/Holiday-CLI#readme",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "country-list": "^2.2.0"
+  }
+}
