@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 holiday = (country) => {
-  console.log("Hello, Node.JS!");
+  const chalk = require("chalk");
 
   const axios = require("axios");
 
@@ -17,13 +17,23 @@ holiday = (country) => {
     .get(URL)
     .then((response) => {
       for (i = 0; i < response.data.length; i++) {
-        console.log(response.data[i].date);
-        console.log(response.data[i].name);
+        console.log("\n" + chalk.blue.underline(response.data[i].date));
+        console.log(chalk.red.italic(response.data[i].name));
       }
     })
     .catch((error) => {
       console.log(error);
     });
+
+  const ora = require("ora");
+
+  const spinner = ora("Loading").start();
+
+  setTimeout(() => {
+    spinner.color = "yellow";
+    spinner.text = "Loading rainbows";
+    spinner.succeed("done");
+  }, 1000);
 };
 
 let country = process.argv.slice(2);
