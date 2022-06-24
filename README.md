@@ -4,8 +4,6 @@
 
 Learning how to build our own npn package.
 
-publish [here](https://www.npmjs.com/package/holiday--cli)
-
 It can be install with the command " npm i holiday--cli "
 
 after the installation, the command " npx holidates \*\*\*\* " associate with a country of your choice will display the differents holidays for the current year.
