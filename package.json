@@ -1,10 +1,14 @@
 {
-  "name": "holiday-cli",
+  "name": "holiday--cli",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "bin": {
+    "holidates": "index.js"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "holidates": "node . "
   },
   "repository": {
     "type": "git",

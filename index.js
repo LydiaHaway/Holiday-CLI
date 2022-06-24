@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-Holiday = (country) => {
+holiday = (country) => {
   console.log("Hello, Node.JS!");
 
   const axios = require("axios");
@@ -9,7 +9,9 @@ Holiday = (country) => {
 
   country = getCode(country);
 
-  const URL = `https://date.nager.at/api/v3/PublicHolidays/2022/${country}`;
+  let currentYear = new Date().getFullYear();
+
+  const URL = `https://date.nager.at/api/v3/PublicHolidays/${currentYear}/${country}`;
 
   axios
     .get(URL)
@@ -27,6 +29,6 @@ Holiday = (country) => {
 let country = process.argv.slice(2);
 country = country[0];
 
-Holiday(country);
+holiday(country);
 
-module.exports = Holiday;
+module.exports = holiday;
