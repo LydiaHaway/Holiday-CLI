@@ -12,7 +12,7 @@ We use the API [nager.date](https://date.nager.at/) and some NPN package ([count
 
 - type " npm i holiday--cli " in your console
 
-## How tu use it
+## How t0 use it
 
 - On a JS Files, type the line " require("holiday--cli) "
 - In your console, type the command " npx holidates \*\*\* " associate with a country of your choise
